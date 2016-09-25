@@ -2,7 +2,7 @@ var mysql = require("mysql");
 var express = require("express");
 
 var app = express();
-var port = process.env.PORT || 3500;
+var port = process.env.PORT;
 
 var favicon = require('serve-favicon');
 app.use(favicon(__dirname + '/favicon.ico'));
