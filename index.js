@@ -4,6 +4,9 @@ var express = require("express");
 var app = express();
 var port = process.env.PORT || 3500;
 
+var favicon = require('serve-favicon');
+app.use(favicon(__dirname + '/favicon.ico'));
+
 app.listen(port, function(){
     console.log("Listening on port " + port);
 });
@@ -29,7 +32,6 @@ app.get("/", function(request, response){
        if (error) {
            console.log("Something went wrong... " + error);
        } else {
-          console.log(rows);
           response.send(rows);
        }
     });
