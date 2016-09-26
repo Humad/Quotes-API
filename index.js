@@ -29,6 +29,7 @@ app.get("/", function(request, response){
        if (error) {
            console.log("Something went wrong... " + error);
        } else {
+          response.render("index.html");
           response.send(rows);
        }
     });
