@@ -13,7 +13,7 @@ app.get("/", function(request, response){
     response.render("index");
 });
 
-app.get("/about", function(request, response){
+app.get("/get", function(request, response){
     var connection = mysql.createConnection({
         connectionLimit: 100,
         host: "humadshah.com",
