@@ -4,13 +4,16 @@ var app = express();
 var port = process.env.PORT || 3000;
 
 app.set("view engine", "ejs");
-app.set("views", "/");
 
 app.listen(port, function(){
     console.log("Listening on port " + port);
 });
 
 app.get("/", function(request, response){
+    response.render("index");
+});
+
+app.get("/about", function(request, response){
     var connection = mysql.createConnection({
         connectionLimit: 100,
         host: "humadshah.com",
@@ -31,8 +34,7 @@ app.get("/", function(request, response){
        if (error) {
            console.log("Something went wrong... " + error);
        } else {
-          response.render("index");
-          response.send(rows);
+          response.json(rows);
        }
     });
     
