@@ -2,10 +2,7 @@ var mysql = require("mysql");
 var express = require("express");
 
 var app = express();
-var port = process.env.PORT;
-
-var favicon = require('serve-favicon');
-app.use(favicon(__dirname + '/favicon.ico'));
+var port = process.env.PORT || 3000;
 
 app.listen(port, function(){
     console.log("Listening on port " + port);
