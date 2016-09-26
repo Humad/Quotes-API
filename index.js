@@ -3,6 +3,7 @@ var express = require("express");
 
 var app = express();
 var port = process.env.PORT || 3000;
+app.set("view engine", "ejs");
 
 app.listen(port, function(){
     console.log("Listening on port " + port);
@@ -29,7 +30,7 @@ app.get("/", function(request, response){
        if (error) {
            console.log("Something went wrong... " + error);
        } else {
-          response.render("index.html");
+          response.render("index");
           response.send(rows);
        }
     });
