@@ -1,3 +1,58 @@
-<h1>
-    This page simply returns the quotes stored in my hosted database. It is part of a Random Quote Generator which can be fund here: ...
-</h1>
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="description" content="Organize your life with lists">
+      <meta name="keywords" content="lists, organize">
+      <meta name="author" content="Humad Shah">
+      
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+      <!-- add style in a separate file later -->
+   </head>
+   
+   <style></style>
+   
+   <body>
+      <div class="container">
+         <div id="box">
+            <h3 id="quote"></h3>
+            <h4 id="author"></h4>
+            <button id="new-quote">Get new quote!</button>
+         </div>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+   </body>
+   
+   <script>
+      $(document).ready(function(){
+         
+         var quotes = [];
+         
+         $.ajax({
+            type: "GET",
+            url: "https://getquote.herokuapp.com/get",
+            dataType: "jsonp",
+            success: function(data){
+               quotes = data["quotes"];
+               console.log("Success!");
+            },
+            error: function(err){
+               console.log("ran into an error...");
+            }
+         });
+         
+         function getNewQuote() {
+            var random = Math.floor(Math.random() * (quotes.length));
+            $("#quote").html(quotes[random].Quote);
+            $("#author").html("- " + quotes[random].Author);
+         }
+         
+         $("#new-quote").on("click", function(){
+            getNewQuote();
+         });
+      });
+   </script>
+   
+   
+</html>
