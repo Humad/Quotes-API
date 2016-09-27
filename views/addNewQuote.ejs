@@ -1,0 +1,21 @@
+<form onSubmit="addNewQuote()">
+    <p>Quote: </p>
+    <input type="text" required id="quote">
+    <p>Author: </p>
+    <input type="text" required id="author">
+    <input type="Submit">
+</form>
+
+<script>
+    function addNewQuote() {
+        var quote = encodeURIComponent(document.getElementById("quote").value);
+        var author = encodeURIComponent(document.getElementById("author").value);
+        finalize(quote, author);
+    }
+    
+    function finalize(quote, author) {
+        $.get("https://getquote.herokuapp.com/" + "add?id=0&quote=" + quote + "&author=" + author, function(data) {
+            alert("data was added" );
+        });
+    }
+</script>
