@@ -34,7 +34,7 @@ app.get("/get", function(request, response){
        if (error) {
            console.log("Something went wrong... " + error);
        } else {
-          response.json({"quotes": rows});
+          response.jsonp({"quotes": rows});
        }
     });
     
