@@ -1,7 +1,7 @@
 $(document).ready(function(){
          
     var quotes = [];
-    // colors taken from: https://codepen.io/FreeCodeCamp/pen/ONjoLe
+    // some colors taken from: https://codepen.io/FreeCodeCamp/pen/ONjoLe
     var colors = ["#16a085", "#27ae60", "#2c3e50", "#f39c12", "#e74c3c", "#9b59b6",
                   "#FB6964", "#342224", "#472E32", "#BDBB99", "#77B1A9", "#73A857",
                   "#BCCF02", "#5BB12F", "#73C5FF", "#9B539C", "#EB65A0", "#69D2E7",
@@ -12,8 +12,8 @@ $(document).ready(function(){
     
     $.ajax({
        type: "GET",
-       url: "https://getquote.herokuapp.com/get",
-       dataType: "jsonp",
+       url: window.location.href + "get",
+       dataType: "json",
        success: function(data){
           quotes = data["quotes"];
           console.log("Success!");
@@ -38,6 +38,4 @@ $(document).ready(function(){
        quote.animate({opacity: 0}, 250, function(){ quote.html(quotes[random].Quote); $(this).animate({opacity: 1}, 500)});
        author.animate({opacity: 0}, 250, function(){ author.html("- " + quotes[random].Author); $(this).animate({opacity: 1}, 500)});
     }
-    
-    
 });

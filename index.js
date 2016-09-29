@@ -1,27 +1,11 @@
 var mysql = require("mysql");
 var express = require("express");
 var app = express();
-var port = process.env.PORT;
+var port = process.env.PORT || 3000;
 var path = require("path");
 
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, 'public')));
-
-var connection = mysql.createConnection({
-    connectionLimit: 100,
-    host: "humadshah.com",
-    user: "public_guests",
-    password:"hello",
-    database:"my_quotes"
-});
-
-connection.connect(function(error){
-    if(error){
-        console.log("Couldn't connect :(  " + error);
-    } else {
-        console.log("Connected successfully~!");
-    }    
-});
 
 app.listen(port, function(){
     console.log("Listening on port " + port);
@@ -31,7 +15,24 @@ app.get("/", function(request, response){
     response.render("index");
 });
 
-app.get("/get", function(req, res){    
+app.get("/get", function(req, res){
+    
+    var connection = mysql.createConnection({
+        connectionLimit: 100,
+        host: "humadshah.com",
+        user: "public_guests",
+        password:"hello",
+        database:"my_quotes"
+    });
+    
+    connection.connect(function(error){
+        if(error){
+            console.log("Couldn't connect :(  " + error);
+        } else {
+            console.log("Connected successfully~!");
+        }    
+    });
+    
     connection.query("SELECT * FROM Quotes", function(error, rows, fields){
        if (error) {
            console.log("Something went wrong... " + error);
@@ -44,14 +45,17 @@ app.get("/get", function(req, res){
 });
 
 app.get("/add", function(req, res){
-    
-    connection.query("INSERT INTO `Quotes`(`ID`, `Quote`, `Author`) VALUES (0,'" + decodeURIComponent(req.query.quote.toString()) + "','" + decodeURIComponent(req.query.author.toString()) + "')", function(error, rows, fields){
-       if (error) {
-           console.log("Something went wrong... " + error);
-       } else {
-           console.log("Entry added!");
-       }
-    });
+    if (req.query.length > 0) {
+        connection.query("INSERT INTO `Quotes`(`ID`, `Quote`, `Author`) VALUES (0,'" +
+                         decodeURIComponent(req.query.quote.toString()) +
+                         "','" + decodeURIComponent(req.query.author.toString()) + "')", function(error, rows, fields){
+           if (error) {
+               console.log("Something went wrong... " + error);
+           } else {
+               console.log("Entry added!");
+           }
+        });
+    }
     
     res.end();
 });
