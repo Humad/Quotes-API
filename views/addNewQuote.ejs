@@ -1,6 +1,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 
-<form onSubmit="addNewQuote()">
+<form id="form">
     <p>Quote: </p>
     <input type="text" required id="quote">
     <p>Author: </p>
@@ -11,6 +11,12 @@
 
 
 <script>
+    
+    $('#form').submit(function () {
+        addNewQuote();
+        return false;
+    });
+    
     function addNewQuote() {
         var quote = encodeURIComponent(document.getElementById("quote").value);
         var author = encodeURIComponent(document.getElementById("author").value);
@@ -18,7 +24,7 @@
     }
     
     function finalize(quote, author) {
-        $.get("https://getquote.herokuapp.com/" + "add?id=0&quote=" + quote + "&author=" + author, function(data) {
+        $.get("http://localhost:3000/add?id=0&quote=" + quote + "&author=" + author, function(data) {
             alert("data was added" );
         });
     }

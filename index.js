@@ -15,9 +15,7 @@ app.get("/", function(request, response){
     response.render("index");
 });
 
-app.get("/get", function(req, res){
-    
-    var connection = mysql.createConnection({
+var connection = mysql.createConnection({
         connectionLimit: 100,
         host: "humadshah.com",
         user: "public_guests",
@@ -31,7 +29,9 @@ app.get("/get", function(req, res){
         } else {
             console.log("Connected successfully~!");
         }    
-    });
+});
+
+app.get("/get", function(req, res){
     
     connection.query("SELECT * FROM Quotes", function(error, rows, fields){
        if (error) {
@@ -45,10 +45,12 @@ app.get("/get", function(req, res){
 });
 
 app.get("/add", function(req, res){
-    if (req.query.length > 0) {
-        connection.query("INSERT INTO `Quotes`(`ID`, `Quote`, `Author`) VALUES (0,'" +
-                         decodeURIComponent(req.query.quote.toString()) +
-                         "','" + decodeURIComponent(req.query.author.toString()) + "')", function(error, rows, fields){
+    console.log(req.query);
+    if (req.query != null) {
+        console.log(req.query);
+        connection.query("INSERT INTO Quotes(ID, Quote, Author) VALUES (0,?,?)",
+                         [decodeURIComponent(req.query.quote.toString()), decodeURIComponent(req.query.author.toString())],
+                         function(error, rows, fields){
            if (error) {
                console.log("Something went wrong... " + error);
            } else {
