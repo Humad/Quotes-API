@@ -1,5 +1,4 @@
-$(document).ready(function(){
-         
+$(document).ready(function(){ 
     var quotes = [];
     // some colors taken from: https://codepen.io/FreeCodeCamp/pen/ONjoLe
     var colors = ["#16a085", "#27ae60", "#2c3e50", "#f39c12", "#e74c3c", "#9b59b6",
