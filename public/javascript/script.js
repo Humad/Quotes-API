@@ -9,13 +9,15 @@ $(document).ready(function(){
     
     var quote = $("#quote");
     var author = $("#author");
+    var twitter = $("#tweet");
     
+    // send request to server
     $.ajax({
        type: "GET",
        url: window.location.href + "get",
        dataType: "json",
        success: function(data){
-          quotes = data["quotes"];
+          quotes = data["quotes"]; // store response
           console.log("Success!");
           getNewQuote();
        },
@@ -35,7 +37,16 @@ $(document).ready(function(){
        $("body").css("background", newColor);
        $("#new-quote").css("background", newColor);
        
-       quote.animate({opacity: 0}, 250, function(){ quote.html(quotes[random].Quote); $(this).animate({opacity: 1}, 500)});
-       author.animate({opacity: 0}, 250, function(){ author.html("- " + quotes[random].Author); $(this).animate({opacity: 1}, 500)});
+       var q = quotes[random].Quote;
+       var a = quotes[random].Author;
+       
+       // set twitter link
+       twitter.attr("href", "https://twitter.com/intent/tweet?text='" + encodeURIComponent(q) +
+                    "'   - " + encodeURIComponent(a) +
+                    "&hashtags=quotes&url=https://getquote.herokuapp.com");
+       
+       // fade in text
+       quote.animate({opacity: 0}, 250, function(){ quote.html(q); $(this).animate({opacity: 1}, 500)});
+       author.animate({opacity: 0}, 250, function(){ author.html("- " + a); $(this).animate({opacity: 1}, 500)});
     }
 });
