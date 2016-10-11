@@ -24,7 +24,7 @@
     }
     
     function finalize(quote, author) {
-        $.get("http://localhost:3000/add?id=0&quote=" + quote + "&author=" + author, function(data) {
+        $.get("https://getquote.herokuapp.com/add?id=0&quote=" + quote + "&author=" + author, function(data) {
             alert("data was added" );
         });
     }
