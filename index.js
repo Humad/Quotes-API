@@ -49,7 +49,7 @@ app.get("/get", function(req, res){
 });
 
 // request for quote to be added is received
-app.get("/add", function(req, res){
+app.get("/secretadd", function(req, res){
     if (req.query != null) {
         connection.query("INSERT INTO Quotes(ID, Quote, Author) VALUES (0,?,?)",
                          [decodeURIComponent(req.query.quote.toString()), decodeURIComponent(req.query.author.toString())],
