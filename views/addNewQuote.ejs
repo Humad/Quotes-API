@@ -1,20 +1,25 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<html>
+    <% include ./partials/head %>
+    <body>
+        <form id="form">
+            <p>Quote: </p>
+            <input type="text" required id="quote">
+            <p>Author: </p>
+            <input type="text" required id="author">
+            <input type="Submit">
+        </form>
+        <% include ./partials/footer %>
+    </body>
+</html>
 
-<form id="form">
-    <p>Quote: </p>
-    <input type="text" required id="quote">
-    <p>Author: </p>
-    <input type="text" required id="author">
-    <input type="Submit">
-</form>
 
 
 
 <script>
-    
     $('#form').submit(function () {
         addNewQuote();
-        return false;
+        return false; // prevent page from being refreshed
     });
     
     function addNewQuote() {
@@ -23,8 +28,9 @@
         finalize(quote, author);
     }
     
+    // sends request to server
     function finalize(quote, author) {
-        $.get("https://getquote.herokuapp.com/add?id=0&quote=" + quote + "&author=" + author, function(data) {
+        $.get(window.location.href + "add?id=0&quote=" + quote + "&author=" + author, function(data) {
             alert("data was added" );
         });
     }
