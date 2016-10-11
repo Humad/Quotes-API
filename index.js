@@ -41,7 +41,6 @@ app.get("/get", function(req, res){
        }
     });
     
-    connection.end();
 });
 
 app.get("/add", function(req, res){
