@@ -41,11 +41,11 @@ app.get("/get", function(req, res){
     connection.query("SELECT * FROM Quotes", function(error, rows, fields){
        if (error) {
            console.log("Something went wrong... " + error);
+           res.end();
        } else {
           res.jsonp({"quotes": rows});
        }
     });
-    res.end();
 });
 
 // request for quote to be added is received
