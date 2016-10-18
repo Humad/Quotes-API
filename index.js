@@ -42,8 +42,10 @@ app.get("/get", function(req, res){
        if (error) {
            console.log("Something went wrong... " + error);
            res.end();
+           connection.end();
        } else {
           res.jsonp({"quotes": rows});
+          connection.end();
        }
     });
 });
