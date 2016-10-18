@@ -7,10 +7,10 @@ var path = require("path");
 // open a connection to the database
 var connection = mysql.createConnection({
     connectionLimit: 100,
-    host: "humadshah.com",
-    user: "public_guests",
-    password:"hello",
-    database:"my_quotes"
+    host: "my-test-database.c3j6vph7cyv2.us-west-2.rds.amazonaws.com",
+    user: "public",
+    password:"helloworld",
+    database:"quotes"
 });
 
 // connect to the database
@@ -46,26 +46,5 @@ app.get("/get", function(req, res){
           res.jsonp({"quotes": rows});
        }
     });
-});
-
-// request for quote to be added is received
-app.get("/secretadd", function(req, res){
-    if (req.query != null) {
-        connection.query("INSERT INTO Quotes(ID, Quote, Author) VALUES (0,?,?)",
-                         [decodeURIComponent(req.query.quote.toString()), decodeURIComponent(req.query.author.toString())],
-                         function(error, rows, fields){
-           if (error) {
-               console.log("Something went wrong... " + error);
-           } else {
-               console.log("Entry added!");
-           }
-        });
-    }
-    res.end();
-});
-
-// secret page that allows users to add quotes to the database
-app.get("/secret", function(req, res){
-    res.render("addNewQuote");
 });
 
