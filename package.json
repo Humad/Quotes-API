@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/Humad/quote-api/issues"
   },
-  "homepage": "https://github.com/Humad/quote-api#readme"
+  "homepage": "https://github.com/Humad/quote-api#readme",
+  "dependencies": {
+    "mongodb": "^2.2.11"
+  }
 }
