@@ -30,10 +30,12 @@ app.get("/get", function(req, res){
     })
 });
 
+// page where the user can add quotes
 app.get("/add", function(req, res){
     res.render("addNewQuote");
 });
 
+// request to add quotes
 app.post("/add", function(req, res){
     var data = {
         "text":req.body.quote,

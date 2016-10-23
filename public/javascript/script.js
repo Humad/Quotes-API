@@ -37,7 +37,6 @@ $(document).ready(function(){
        $("#new-quote").css("background", newColor);
 
 
-
        var q = decodeURIComponent(quotes[random].text);
        var a = decodeURIComponent(quotes[random].author);
        
