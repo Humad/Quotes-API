@@ -21,7 +21,7 @@ $(document).ready(function(){
           getNewQuote();
        },
        error: function(err){
-          console.log("Ran into an error... " + err);
+          console.log("Ran into an error... " + err.toString());
        }
     });
     
@@ -38,9 +38,8 @@ $(document).ready(function(){
 
 
 
-       var q = quotes[random].text;
-       var a = quotes[random].author;
-        console.log(a);
+       var q = decodeURIComponent(quotes[random].text);
+       var a = decodeURIComponent(quotes[random].author);
        
        // set twitter link
        twitter.attr("href", "https://twitter.com/intent/tweet?text='" + encodeURIComponent(q) +

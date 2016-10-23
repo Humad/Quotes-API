@@ -1,4 +1,4 @@
-<!-- this file is currently not in use -- needs update -->
+<!-- this file needs update -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <html>
@@ -21,7 +21,6 @@
 <script>
     $('#form').submit(function () {
         addNewQuote();
-        return false; // prevent page from being refreshed
     });
     
     function addNewQuote() {
@@ -32,8 +31,17 @@
     
     // sends request to server
     function finalize(quote, author) {
-        $.get(window.location.href + "add?id=0&quote=" + quote + "&author=" + author, function(data) {
-            alert("data was added" );
+        $.ajax({
+            type: "POST",
+            url: window.location.href,
+            dataType: "jsonp",
+            data: {quote: quote, author: author},
+            success: function(data){
+                console.log("Success!");
+            },
+            error: function(err){
+                console.log(err.toString());
+            }
         });
     }
 </script>
