@@ -22,19 +22,19 @@
     $('#form').submit(function () {
         addNewQuote();
     });
-    
+
     function addNewQuote() {
         var quote = encodeURIComponent(document.getElementById("quote").value);
         var author = encodeURIComponent(document.getElementById("author").value);
         finalize(quote, author);
     }
-    
+
     // sends request to server
     function finalize(quote, author) {
         $.ajax({
             type: "POST",
             url: window.location.href,
-            dataType: "jsonp",
+            dataType: "json",
             data: {quote: quote, author: author},
             success: function(data){
                 console.log("Success!");

@@ -16,14 +16,15 @@ app.get("/", function(req, res){
 
 // request for quotes is received
 app.get("/get", function(req, res){
-
-    mongo.connect("mongodb://readers:hello123@ds061246.mlab.com:61246/projects", function(err, db){
+    var mLabUri = "mongodb://" + process.env.readerId +
+        ":" + process.env.readerPass + "@ds061246.mlab.com:61246/projects";
+    mongo.connect(mLabUri, function(err, db){
         if (err){
             throw err;
-            res.end();
+            res.end(err);
         } else {
             db.collection("quotes").find().toArray(function(err, docs){
-                res.status(200).jsonp({data : docs});
+                res.status(200).json({data : docs});
                 db.close();
             });
         }
@@ -38,11 +39,14 @@ app.get("/add", function(req, res){
 // request to add quotes
 app.post("/add", function(req, res){
     var data = {
-        "text":req.body.quote,
+        "text" : req.body.quote,
         "author" : req.body.author
     };
 
-    mongo.connect("mongodb://user:password@ds061246.mlab.com:61246/projects", function(err, db){
+    var mLabUri = "mongodb://" + process.env.writerId +
+        ":" + process.env.writerPass + "@ds061246.mlab.com:61246/projects";
+
+    mongo.connect(mLabUri, function(err, db){
         if (err){
             throw err;
         } else {
