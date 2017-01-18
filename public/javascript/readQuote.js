@@ -10,10 +10,11 @@ $(document).ready(function(){
     var au = $("#author");
     var twitter = $("#tweet");
 
-    // send request to server
+    // Sends a GET request to the server when the page loads,
+    // and stores the results
     $.ajax({
        type: "GET",
-       url: window.location.href + "get",
+       url: window.location.href + "get", // https://urlHere/get
        dataType: "json",
        success: function(d){
           quotes = d.data; // store response
@@ -29,6 +30,7 @@ $(document).ready(function(){
        getNewQuote();
     });
 
+    // Updates the page colors, texts, and the twitter button link
     function getNewQuote() {
        var random = Math.floor(Math.random() * (quotes.length));
        var newColor = colors[Math.floor(Math.random() * (colors.length))];
@@ -40,12 +42,12 @@ $(document).ready(function(){
        var q = decodeURIComponent(quotes[random].text);
        var a = decodeURIComponent(quotes[random].author);
 
-       // set twitter link
+       // Twitter link
        twitter.attr("href", "https://twitter.com/intent/tweet?text='" + encodeURIComponent(q) +
                     "'   - " + encodeURIComponent(a) +
                     "&hashtags=quotes&url=https://getquote.herokuapp.com");
 
-       // fade in text
+       // Fade in animation
        quote.animate({opacity: 0}, 250, function(){ quote.html(q); $(this).animate({opacity: 1}, 500)});
        au.animate({opacity: 0}, 250, function(){ au.html("- " + a); $(this).animate({opacity: 1}, 500)});
     }

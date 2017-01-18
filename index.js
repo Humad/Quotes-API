@@ -9,12 +9,12 @@ app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, 'public'))); // location of scripts and styles
 app.use(bodyParser.urlencoded({ extended: false })); // needed to parse POST requests
 
-// home page
+// Renders the home page
 app.get("/", function(req, res){
-    res.render("index");
+    res.render("readQuote");
 });
 
-// request for quotes is received
+// Connects to the mLab database to retrieve collection of quotes
 app.get("/get", function(req, res){
     var mLabUri = "mongodb://" + process.env.readerId +
         ":" + process.env.readerPass + "@ds061246.mlab.com:61246/projects";
@@ -31,12 +31,12 @@ app.get("/get", function(req, res){
     })
 });
 
-// page where the user can add quotes
+// Renders the addNewQuote page, allowing users to add new quotes
 app.get("/add", function(req, res){
     res.render("addNewQuote");
 });
 
-// request to add quotes
+// Connects to the mLab database to add a quote to the collection of quotes
 app.post("/add", function(req, res){
     var data = {
         "text" : req.body.quote,
