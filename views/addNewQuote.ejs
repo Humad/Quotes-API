@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<!-- Page for allowing users to add a quote to the collection -->
+<html>
+    <% include ./partials/head %>
+    <body>
+        <form id="form">
+            <p>Quote: </p>
+            <input type="text" required id="quote">
+            <p>Author: </p>
+            <input type="text" required id="author">
+            <input type="Submit">
+        </form>
+        <% include ./partials/footer %>
+        <script src="/javascript/writeQuote.js"></script>
+    </body>
+</html>

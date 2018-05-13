@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<!-- Page for allowing users to get a quote from the collection -->
+<html>
+   <% include ./partials/head %>
+   <body>
+      <div class="container">
+         <div id="box">
+            <i class="fa fa-quote-left"></i>
+            <span id="quote"></span>
+            <h4 id="author"></h4>
+            <button class="btn" id="new-quote">Get new quote!</button>
+            <a class="btn btn-social-icon btn-twitter" id="tweet" target="_blank">
+               <span class="fa fa-twitter"></span> Tweet me!
+            </a>
+         </div>
+      </div>
+      <% include ./partials/footer %>
+      <script src="/javascript/readQuote.js"></script>
+   </body>
+</html>

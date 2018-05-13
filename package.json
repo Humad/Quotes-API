@@ -1,0 +1,27 @@
+{
+  "name": "quote-api",
+  "version": "1.0.0",
+  "description": "A NodeJS API that connects to my database and returns the quotes stored there",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Humad/quote-api.git"
+  },
+  "keywords": [
+    "quote"
+  ],
+  "author": "Humad Shah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Humad/quote-api/issues"
+  },
+  "homepage": "https://github.com/Humad/quote-api#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "mongodb": "^2.2.11"
+  }
+}
