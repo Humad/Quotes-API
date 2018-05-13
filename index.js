@@ -13,6 +13,7 @@ app.use(bodyParser.urlencoded({ extended: false })); // needed to parse POST req
 
 // Renders the home page
 app.get("/", function(req, res){
+    console.log("Received get request for page")
     res.render("readQuote");
 });
 
@@ -54,6 +55,7 @@ app.listen(port, function(){
 // -- Helper functions --
 
 function getQuoteFromCollection(res, collection) {
+    console.log("Getting quote from collection ", collection)
     var mLabUri = "mongodb://" + process.env.readerId +
     ":" + process.env.readerPass + "@ds061246.mlab.com:61246/projects";
     mongo.connect(mLabUri, function(err, db){
