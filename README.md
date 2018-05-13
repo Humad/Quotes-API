@@ -1,11 +1,11 @@
 # Quote-Generator
-A Free Code Camp challenge, but with back-end support.
+An API that allows fetching random quotes. Helpful for testing beginner projects that need to connect to the internet.
 
 This was originally a Front-End FreeCodeCamp challenge that used scripts to display a random quote. 
 I decided to work on my back-end skills, and added support so that it connects to my hosted database and returns all the quotes stored there.
 
 Created using HTML, CSS, JavaScript, MongoDB, NodeJS, and ExpressJS.
 
-https://getquote.herokuapp.com
+[Live version](https://getquote.herokuapp.com)
 
-If you would like to add to the database of quotes, send me a message. I will provide you with user details that will allow you to add to the database using the addNewQuotes.ejs file.
+Making a GET request to https://getquote.herokuapp.com/get will return some quotes from my database. I use this when I'm playing around with new things and I want to create a simple app that fetches some data and displays it.
