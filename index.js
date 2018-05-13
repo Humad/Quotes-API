@@ -18,13 +18,17 @@ app.get("/", function(req, res){
 
 // Connects to the mLab database to retrieve collection of quotes
 app.get("/get", function(req, res){
-    getQuoteFromCollection(res, "quotes");
+    getQuotesFromCollection(res, "quotes");
 });
 
 // Get motivational quotes
 app.get("/getMotivational", function(req, res) {
-    getQuoteFromCollection(res, "motivationalQuotes")
+    getQuoteFromCollection(res, "motivationalQuotes");
 });
+
+app.get("/getOne", function(req, res) {
+    getQuoteFromCollection(res, "quotes");
+})
 
 // Renders the addNewQuote page, allowing users to add new quotes
 app.get("/add", function(req, res){
@@ -54,6 +58,25 @@ app.listen(port, function(){
 // -- Helper functions --
 
 function getQuoteFromCollection(res, collection) {
+    var mLabUri = "mongodb://" + process.env.readerId +
+    ":" + process.env.readerPass + "@ds061246.mlab.com:61246/projects";
+    mongo.connect(mLabUri, function(err, db){
+        if (err){
+            throw err;
+            res.end(err);
+        } else {
+            var quote = db.collection(collection).aggregate([
+                { $sample: { size: 1 } }
+            ], function(err, docs) {
+                res.status(200).json({data : docs[0]});
+            })
+            
+            db.close();
+        }
+    })
+}
+
+function getQuotesFromCollection(res, collection) {
     var mLabUri = "mongodb://" + process.env.readerId +
     ":" + process.env.readerPass + "@ds061246.mlab.com:61246/projects";
     mongo.connect(mLabUri, function(err, db){
