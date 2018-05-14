@@ -1,13 +1,19 @@
 var express = require("express");
 var app = express();
 var path = require("path");
-var mongo = require('mongodb').MongoClient;
+var mongo = require("mongodb").MongoClient;
 var bodyParser = require("body-parser");
 var port = process.env.PORT || 3000;
 
 app.set("view engine", "ejs");
-app.use(express.static(path.join(__dirname, 'public'))); // location of scripts and styles
+app.use(express.static(path.join(__dirname, "public"))); // location of scripts and styles
 app.use(bodyParser.urlencoded({ extended: false })); // needed to parse POST requests
+
+// Keep Heroku app alive
+const http = require("http");
+setInterval(function() {
+    http.get("http://getquote.herokuapp.com");
+}, 300000); // 5 Minutes 
 
 // -- GET requests -- 
 
