@@ -1,0 +1,394 @@
+{
+    "_id": {
+        "$oid": "5afcc1258740ea00148f54fb"
+    },
+    "text": "When%20you%20get%20to%20the%20end%20of%20your%20rope%2C%20tie%20a%20knot%20%26%20hang%20on.",
+    "author": "Franklin%20D.%20Roosevelt"
+},
+
+{
+    "_id": {
+        "$oid": "5afcc1838740ea00148f54fc"
+    },
+    "text": "Don't%20go%20through%20life%2C%20grow%20through%20life.",
+    "author": "Eric%20Butterworth"
+},
+
+{
+    "_id": {
+        "$oid": "5afcc3e98740ea00148f54fd"
+    },
+    "text": "%22Dear%20God%2C'%20she%20prayed%2C'let%20me%20be%20something%20every%20minute%20of%20every%20hour%20of%20my%20life.'%22",
+    "author": "Betty%20Smith%2C%20A%20Tree%20Grows%20in%20Brooklyn"
+},
+
+{
+    "_id": {
+        "$oid": "5afcc4168740ea00148f54fe"
+    },
+    "text": "%22If%20equal%20affection%20cannot%20be%2C%20let%20the%20more%20loving%20one%20be%20me.%22",
+    "author": "W.%20H.%20Auden%2C%20%22The%20More%20Loving%20One%22"
+},
+
+{
+    "_id": {
+        "$oid": "5afcc4918740ea00148f5500"
+    },
+    "text": "%22In%20spite%20of%20everything%2C%20I%20still%20believe%20people%20are%20really%20good%20at%20heart.%22",
+    "author": "Anne%20Frank%2C%20The%20Diary%20of%20Anne%20Frank"
+},
+
+{
+    "_id": {
+        "$oid": "5afcc4db8740ea00148f5501"
+    },
+    "text": "%22I%20celebrate%20myself%2C%20and%20sing%20myself.%22",
+    "author": "Walt%20Whitman%2C%20Leaves%20of%20Grass"
+},
+
+{
+    "_id": {
+        "$oid": "5afcc5048740ea00148f5502"
+    },
+    "text": "%20%22I%20would%20always%20rather%20be%20happy%20than%20dignified.%22",
+    "author": "Charlotte%20Bront%C3%AB%20%2C%20Jane%20Eyre"
+},
+
+{
+    "_id": {
+        "$oid": "5afcc59b8740ea00148f5503"
+    },
+    "text": "%E2%80%9CAnd%20as%20the%20ax%20bites%20into%20the%20wood%2C%20be%20comforted%20in%20the%20fact%20that%20the%20ache%20in%20your%20heart%20and%20the%20confusion%20in%20your%20soul%20means%20that%20you%20are%20still%20alive%2C%20still%20human%2C%20and%20still%20open%20to%20the%20beauty%20of%20the%20world%2C%20even%20though%20you%20have%20done%20nothing%20to%20deserve%20it.%E2%80%9D",
+    "author": "Paul%20Harding"
+},
+
+{
+    "_id": {
+        "$oid": "5afcc7228740ea00148f5504"
+    },
+    "text": "%E2%80%9CHe%E2%80%99d%20say%20%E2%80%9CI%20love%20you%E2%80%9D%20to%20every%20man%20in%20the%20squad%20before%20rolling%20out%2C%20say%20it%20straight%2C%20with%20no%20joking%20or%20smart-ass%20lilt%20and%20no%20warbly%20Christian%20smarm%20in%20it%20either%2C%20just%20that%20brisk%20declaration%20like%20he%20was%20tightening%20the%20seat%20belts%20around%20everyone%E2%80%99s%20soul.%E2%80%9D",
+    "author": "%20Ben%20Fountain"
+},
+
+{
+    "_id": {
+        "$oid": "5afcc7fb8740ea00148f5505"
+    },
+    "text": "%E2%80%9CI%20am%20not%20washed%20and%20beautiful%2C%20in%20control%20of%20a%20shining%20world%20in%20which%20everything%20fits%2C%20but%20instead%20am%20wandering%20awed%20about%20on%20a%20splintered%20wreck%20I%E2%80%99ve%20come%20to%20care%20for%2C%20whose%20gnawed%20trees%20breathe%20a%20delicate%20air%2C%20whose%20bloodied%20and%20scarred%20creatures%20are%20my%20dearest%20companions%2C%20and%20whose%20beauty%20bats%20and%20shines%20not%20in%20its%20imperfections%20but%20overwhelmingly%20in%20spite%20of%20them.%E2%80%9D",
+    "author": "Annie%20Dillard"
+},
+
+{
+    "_id": {
+        "$oid": "5afcc9228740ea00148f5506"
+    },
+    "text": "%22They%20were%20watching%2C%20out%20there%20past%20men's%20knowing%2C%20where%20stars%20are%20drowning%20and%20whales%20ferry%20their%20vast%20souls%20through%20the%20black%20and%20seamless%20sea.%22%20%20",
+    "author": "Cormac%20McCarthy%20"
+},
+
+{
+    "_id": {
+        "$oid": "5afcc94a8740ea00148f5507"
+    },
+    "text": "%E2%80%9CSome%20nights%20in%20the%20midst%20of%20this%20loneliness%20I%20swung%20among%20the%20scattered%20stars%20at%20the%20end%20of%20the%20thin%20thread%20of%20faith%20alone.%E2%80%9D",
+    "author": "Wendell%20Berry"
+},
+
+{
+    "_id": {
+        "$oid": "5afcc9da8740ea00148f5508"
+    },
+    "text": "%20%E2%80%9CWe%20laughed%20and%20laughed%2C%20together%20and%20separately%2C%20out%20loud%20and%20silently%2C%20we%20were%20determined%20to%20ignore%20whatever%20needed%20to%20be%20ignored%2C%20to%20build%20a%20new%20world%20from%20nothing%20if%20nothing%20in%20our%20world%20could%20be%20salvaged%2C%20it%20was%20one%20of%20the%20best%20days%20of%20my%20life%2C%20a%20day%20during%20which%20I%20lived%20my%20life%20and%20didn%E2%80%99t%20think%20about%20my%20life%20at%20all.%E2%80%9D",
+    "author": "Jonathan%20Safran%20Foer"
+},
+
+{
+    "_id": {
+        "$oid": "5afccb1a8740ea00148f5509"
+    },
+    "text": "%E2%80%9CRather%20he%20consoled%20himself%20with%20the%20fact%20that%2C%20in%20the%20real%20world%2C%20when%20he%20looked%20closely%20into%20the%20darkness%20he%20might%20find%20the%20presence%20of%20a%20light%2C%20damaged%20and%20bruised%2C%20but%20a%20little%20light%20all%20the%20same.%E2%80%9D",
+    "author": "Colum%20McCann"
+},
+
+{
+    "_id": {
+        "$oid": "5afccb3e8740ea00148f550a"
+    },
+    "text": "%E2%80%9CBut%20these%20thoughts%20broke%20apart%20in%20his%20head%20and%20were%20replaced%20by%20strange%20fragments%3A%20This%20is%20my%20soul%20and%20the%20world%20unwinding%2C%20this%20is%20my%20heart%20in%20the%20still%20winter%20air.%E2%80%9D",
+    "author": "Emily%20St.%20John%20Mandel"
+},
+
+{
+    "_id": {
+        "$oid": "5afccda78740ea00148f550d"
+    },
+    "text": "%22Happiness%20%5Bis%5D%20only%20real%20when%20shared.%22",
+    "author": "Jon%20Krakauer%2C%20Into%20the%20Wild"
+},
+
+{
+    "_id": {
+        "$oid": "5afccdfe8740ea00148f550f"
+    },
+    "text": "%22How%20wild%20it%20was%2C%20to%20let%20it%20be.%22",
+    "author": "Cheryl%20Strayed%2C%20Wild%3A%20From%20Lost%20to%20Found%20on%20the%20Pacific%20Crest%20Trail"
+},
+
+{
+    "_id": {
+        "$oid": "5afcd17b8740ea00148f5526"
+    },
+    "text": "%22Change%20before%20you%20have%20to.%22",
+    "author": "Jack%20Welch%2C%20Winning"
+},
+
+{
+    "_id": {
+        "$oid": "5afccc858740ea00148f550b"
+    },
+    "text": "%E2%80%9CSo%2C%20this%20is%20my%20life.%20And%20I%20want%20you%20to%20know%20that%20I%20am%20both%20happy%20and%20sad%20and%20I%E2%80%99m%20still%20trying%20to%20figure%20out%20how%20that%20could%20be.%E2%80%9D",
+    "author": "Stephen%20Chbosky%2C%20Perks%20Of%20Being%20A%20Wallflower"
+},
+
+{
+    "_id": {
+        "$oid": "5afccd358740ea00148f550c"
+    },
+    "text": "%E2%80%9CSometimes%20I%20can%20hear%20my%20bones%20straining%20under%20the%20weight%20of%20all%20the%20lives%20I%E2%80%99m%20not%20living.%E2%80%9D",
+    "author": "Jonathan%20Safran%20Foer%2C%20Extremely%20Loud%20And%20Incredibly%20Close"
+},
+
+{
+    "_id": {
+        "$oid": "5afccdd18740ea00148f550e"
+    },
+    "text": "%22I%20hadn%E2%80%99t%20expected%20that%20a%20tiny%20glimmer%20of%20hope%20for%20the%20future%20could%20transform%20someone%20so%20utterly.%22",
+    "author": "Dai%20Sijie%2C%20Balzac%20and%20the%20Little%20Chinese%20Seamstress%3A%20A%20Novel"
+},
+
+{
+    "_id": {
+        "$oid": "5afcce378740ea00148f5510"
+    },
+    "text": "%22But%20to%20pay%20attention%20is%20to%20love%20everything.%22",
+    "author": "Sarah%20Manguso%2C%20The%20Two%20Kinds%20of%20Decay%3A%20A%20Memoir"
+},
+
+{
+    "_id": {
+        "$oid": "5afcce788740ea00148f5511"
+    },
+    "text": "%22To%20choose%20doubt%20as%20a%20philosophy%20of%20life%20is%20akin%20to%20choosing%20immobility%20as%20a%20means%20of%20transportation.%22",
+    "author": "Yann%20Martel%2C%20Life%20of%20Pi"
+},
+
+{
+    "_id": {
+        "$oid": "5afcceba8740ea00148f5512"
+    },
+    "text": "%22So%20it%20goes.%22",
+    "author": "%20Kurt%20Vonnegut%2C%20Slaughterhouse-Five%3A%20A%20Novel%20"
+},
+
+{
+    "_id": {
+        "$oid": "5afcced98740ea00148f5513"
+    },
+    "text": "%22Each%20of%20us%20had%20something%20to%20learn%20from%20the%20others%20and%20something%20to%20teach%20in%20return.%22",
+    "author": "Augustine%2C%20Confessions"
+},
+
+{
+    "_id": {
+        "$oid": "5afccf0d8740ea00148f5514"
+    },
+    "text": "%22I%20don%E2%80%99t%20know%20what%E2%80%99s%20worse%3A%20to%20not%20know%20what%20you%20are%20and%20be%20happy%2C%20or%20to%20become%20what%20you%E2%80%99ve%20always%20wanted%20to%20be%2C%20and%20feel%20alone.%22",
+    "author": "Daniel%20Keyes%2C%20Flowers%20for%20Algernon"
+},
+
+{
+    "_id": {
+        "$oid": "5afccf288740ea00148f5515"
+    },
+    "text": "%22Hell%20is%20empty%20and%20all%20the%20devils%20are%20here.%22",
+    "author": "%20William%20Shakespeare%2C%20The%20Complete%20Works%20of%20William%20Shakespeare"
+},
+
+{
+    "_id": {
+        "$oid": "5afccf728740ea00148f5516"
+    },
+    "text": "%22If%20you%20look%20for%20perfection%2C%20you'll%20never%20be%20content.%22",
+    "author": "Leo%20Tolstoy%2C%20Anna%20Karenina"
+},
+
+{
+    "_id": {
+        "$oid": "5afccf938740ea00148f5517"
+    },
+    "text": "%22Nobody%20even%20imagines%20how%20well%20one%20can%20lie%20about%20the%20state%20of%20one%E2%80%99s%20own%20heart.%22",
+    "author": "Yukio%20Mishima%2C%20Thirst%20for%20Love"
+},
+
+{
+    "_id": {
+        "$oid": "5afccfb18740ea00148f5518"
+    },
+    "text": "%22What%20we%20do%20now%20echoes%20in%20eternity.%22",
+    "author": "%20Marcus%20Aurelius%2C%20Meditations"
+},
+
+{
+    "_id": {
+        "$oid": "5afccfc98740ea00148f5519"
+    },
+    "text": "%22But%20there%20is%20only%20one%20thing%20that%20has%20power%20completely%2C%20and%20this%20is%20love.%22",
+    "author": "Alan%20Paton%2C%20Cry%2C%20the%20Beloved%20Country"
+},
+
+{
+    "_id": {
+        "$oid": "5afccff68740ea00148f551a"
+    },
+    "text": "%22Remember%2C%20any%20lie%20you%20are%20told%2C%20even%20deliberately%2C%20is%20often%20a%20more%20significant%20fact%20than%20a%20truth%20told%20in%20all%20sincerity.%22",
+    "author": "Halld%C3%B3r%20Laxness%2C%20Under%20the%20Glacier"
+},
+
+{
+    "_id": {
+        "$oid": "5afcd00d8740ea00148f551b"
+    },
+    "text": "%22She%20wasn%E2%80%99t%20doing%20a%20thing%20that%20I%20could%20see%2C%20except%20standing%20there%20leaning%20on%20the%20balcony%20railing%2C%20holding%20the%20universe%20together.%22",
+    "author": "J.%20D.%20Salinger%2C%20Nine%20Stories"
+},
+
+{
+    "_id": {
+        "$oid": "5afcd0278740ea00148f551c"
+    },
+    "text": "%22What%20stares%20us%20in%20the%20face%20is%20often%20the%20most%20difficult%20to%20perceive.%22",
+    "author": "%20Pierre%20Teilhard%20de%20Chardin%2C%20The%20Phenomenon%20of%20Man"
+},
+
+{
+    "_id": {
+        "$oid": "5afcd0458740ea00148f551d"
+    },
+    "text": "%22I%20know%20how%20betrayal%20and%20disillusionment%20feel%2C%20when%20someone%20who%20could%20give%20you%20the%20world%20refuses%20even%20a%20tiny%20piece%20of%20it.%22",
+    "author": "Mary%20Kubica%2C%20The%20Good%20Girl"
+},
+
+{
+    "_id": {
+        "$oid": "5afcd05c8740ea00148f551e"
+    },
+    "text": "%22How%20easy%20it%20was%20to%20lie%20to%20strangers%2C%20to%20create%20with%20strangers%20the%20versions%20of%20our%20lives%20that%20we%20have%20imagined.%22",
+    "author": "Chimamanda%20Ngozi%20Adichie%2C%20Americanah"
+},
+
+{
+    "_id": {
+        "$oid": "5afcd07a8740ea00148f551f"
+    },
+    "text": "We%20shall%20meet%20in%20the%20place%20where%20there%20is%20no%20darkness.",
+    "author": "%20George%20Orwell%2C%201984"
+},
+
+{
+    "_id": {
+        "$oid": "5afcd0918740ea00148f5520"
+    },
+    "text": "%22We're%20all%20golden%20sunflowers%20inside.%E2%80%99%22",
+    "author": "%20Allen%20Ginsberg%2C%20The%20New%20Anthology%20of%20American%20Poetry%3A%20Postmodernisms%201950-Present"
+},
+
+{
+    "_id": {
+        "$oid": "5afcd0aa8740ea00148f5521"
+    },
+    "text": "%22The%20greatest%20victory%20in%20life%20is%20to%20rise%20above%20the%20material%20things%20that%20we%20once%20valued%20most.%22",
+    "author": "%20Muhammad%20Ali%20and%20Hana%20Yasmeen%20Ali%2C%20The%20Soul%20of%20a%20Butterfly%3A%20Reflections%20on%20Life's%20Journey"
+},
+
+{
+    "_id": {
+        "$oid": "5afcd0c28740ea00148f5522"
+    },
+    "text": "%22The%20moment%20of%20perceiving%20something%20beautiful%20confers%20on%20the%20perceiver%20the%20gift%20of%20life.%22",
+    "author": "Elaine%20Scarry%2C%20On%20Beauty%20and%20Being%20Just"
+},
+
+{
+    "_id": {
+        "$oid": "5afcd0e08740ea00148f5523"
+    },
+    "text": "%22What%20can%20an%20eternity%20of%20damnation%20matter%20to%20someone%20who%20has%20felt%2C%20if%20only%20for%20a%20second%2C%20the%20infinity%20of%20delight%3F%22",
+    "author": "Charles%20Baudelaire%2C%20Charles%20Baudelaire%3A%20The%20Complete%20Verse"
+},
+
+{
+    "_id": {
+        "$oid": "5afcd1008740ea00148f5524"
+    },
+    "text": "%22Your%20eyes%20are%20full%20of%20language.%22",
+    "author": "Anne%20Sexton%2C%20Anne%20Sexton%3A%20A%20Self-Portrait%20in%20Letters"
+},
+
+{
+    "_id": {
+        "$oid": "5afcd1188740ea00148f5525"
+    },
+    "text": "%22The%20most%20painful%20thing%20is%20losing%20yourself%20in%20the%20process%20of%20loving%20someone%20too%20much%2C%20and%20forgetting%20that%20you%20are%20special%20too.%22",
+    "author": "%20Ernest%20Hemingway%2C%20Men%20Without%20Women"
+},
+
+{
+    "_id": {
+        "$oid": "5afcd1978740ea00148f5527"
+    },
+    "text": "%22It%E2%80%99s%20no%20use%20going%20back%20to%20yesterday%2C%20because%20I%20was%20a%20different%20person%20then.%22",
+    "author": "%20Lewis%20Carroll%2C%20Alice's%20Adventures%20in%20Wonderland%20%26%20Through%20the%20Looking-Glass"
+},
+
+{
+    "_id": {
+        "$oid": "5afcd1b68740ea00148f5528"
+    },
+    "text": "%22How%20sad%20if%20we%20pass%20through%20life%20and%20never%20see%20it%20with%20the%20eyes%20of%20a%20child.%22",
+    "author": "Josh%20Baran%2C%20The%20Tao%20of%20Now%3A%20Daily%20Wisdom%20from%20Mystics%2C%20Sages%2C%20Poets%2C%20and%20Saints"
+},
+
+{
+    "_id": {
+        "$oid": "5afce1088740ea00148f5529"
+    },
+    "text": "Our%20greatest%20glory%20is%20not%20in%20never%20falling%2C%20but%20in%20rising%20every%20time%20we%20fall.",
+    "author": "Confucius"
+},
+
+{
+    "_id": {
+        "$oid": "5afce1188740ea00148f552a"
+    },
+    "text": "All%20our%20dreams%20can%20come%20true%2C%20if%20we%20have%20the%20courage%20to%20pursue%20them.",
+    "author": "Walt%20Disney"
+},
+
+{
+    "_id": {
+        "$oid": "5afce2738740ea00148f552b"
+    },
+    "text": "You%20just%20need%20to%20believe%20in%20yourself!",
+    "author": "Rex%20(Toy%20Story%202)"
+},
+
+{
+    "_id": {
+        "$oid": "5afd2dc10ea9df0014c54ab1"
+    },
+    "text": "When%20you%20start%20to%20feel%20like%20things%20should%20have%20been%20better%20this%20year%2C%20remember%20the%20mountains%20and%20valleys%20that%20got%20you%20here.%20They%20are%20not%20accidents%20and%20those%20moments%20weren't%20in%20vain%20you%20are%20not%20the%20same%20you%20have%20grown%20and%20you%20are%20growing%20you%20are%20breathing%2C%20you%20are%20living%2C%20you%20are%20wrapped%20in%20endless%2C%20boundless%20grace.%20And%20things%20will%20get%20better%20there%20is%20more%20to%20you%20than%20yesterday.%20",
+    "author": "Morgan%20Harper%20Nichols"
+},
+
+
+
