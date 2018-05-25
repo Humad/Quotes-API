@@ -48,7 +48,7 @@ class App extends Component {
       console.log(response);
     })
     .catch(function (error) {
-      console.log(error);
+      console.dir(error);
     });
 
 
