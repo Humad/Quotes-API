@@ -21,12 +21,25 @@ class App extends Component {
     "#BCCF02", "#5BB12F", "#73C5FF", "#9B539C", "#EB65A0", "#69D2E7",
     "#A7DBDB", "#E0E4CC", "#F38630", "#FA6900"];
 
+    this.allQuotes = [];
+
     this.twitterLink = "";
-    
   }
 
   componentDidMount() {
-    this.getNewQuote();
+    axios.get("http://getquote.herokuapp.com/get")
+    .then((response) => {
+      this.allQuotes = response.data.data;
+      console.log(this.allQuotes);
+      this.getNewQuote();
+    })
+    .catch(function (error) {
+      console.log("Error: ", error);
+    });
+  }
+
+  componentDidUpdate() {
+    document.body.style.backgroundColor = this.state.currentColor;
   }
 
   getTwitterLink() {
@@ -41,22 +54,15 @@ class App extends Component {
 
   getNewQuote() {
 
-    console.log("Called get new quote");
+    var random = Math.floor(Math.random() * (this.allQuotes.length));
+    var quote = decodeURIComponent(this.allQuotes[random].text);
+    var author = decodeURIComponent(this.allQuotes[random].author);
 
-    axios.get("http://getquote.herokuapp.com/get")
-    .then(function (response) {
-      console.log(response);
-    })
-    .catch(function (error) {
-      console.dir(error);
+    this.setState({
+      quote: quote,
+      author: author,
+      currentColor: this.getNewColor()
     });
-
-
-
-    // get quote
-    // get author
-    // decode uri components
-    // set state
   }
 
   render() {
@@ -66,7 +72,7 @@ class App extends Component {
             <i class="fa fa-quote-left"></i>
             <span id="quote">{this.state.quote}</span>
             <h4 id="author">{this.state.author}</h4>
-            <button class="btn" id="new-quote" onClick={() => this.getNewQuote()} >{this.buttonText}}</button>
+            <button class="btn" id="new-quote" style={{background: this.state.currentColor}} onClick={() => this.getNewQuote()} >{this.buttonText}</button>
             <a class="btn btn-social-icon btn-twitter" id="tweet" target="_blank" href={this.getTwitterLink()}>
                <span class="fa fa-twitter"></span> Tweet me!
             </a>
