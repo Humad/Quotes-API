@@ -1,0 +1,43 @@
+body {
+    transition:background-color 0.5s ease;
+  }
+  
+  #box {
+    text-align: center;
+    background: #ecf0f1;
+    opacity: 0.9;
+    height: 60%;
+    margin: 200px auto auto auto;
+    padding: 30px;
+    border-style: none;
+    border-radius: 1%;
+    z-index: 2;
+  }
+  
+  #quote-box {
+    height: 100px;
+  }
+  
+  #quote {
+    text-align: center;
+    font-size: 3em;
+  }
+  
+  .fa-quote-left {
+    font-size: 3em !important;
+    margin-right: 10px;
+    margin-top: -100px;
+  }
+  
+  #author {
+    text-align: right;
+    font-size: 2em;
+  }
+  
+  #new-quote {
+    color: white;
+    transition:background-color 0.5s ease;
+    margin: 20px;
+  }
+  
+  
